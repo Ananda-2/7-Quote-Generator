@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400;1,700&family=PT+Serif:ital,wght@1,700&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&family=Sofia+Sans+Extra+Condensed:ital,wght@0,200;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.container{
+    background-color: #fff;
+    text-align: center;
+
+    /* to allign div center */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+
+    width: 50%;
+    min-width: 400px;
+    border-radius: 10px;
+    padding: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.container h2{
+    margin: 20px 0;
+    position: relative;
+}
+
+.container h2::after{
+    content: '';
+    width: 85px;
+    height: 3px;
+    background: #6e8ab5;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container h3{
+    margin-top: 30px;
+    min-height: 70px;
+    font-weight: 400px ;
+}
+
+.container h3::before , .container h3::after{
+    content: '"';
+}
+
+.container h4{
+    display: block;
+    float: right;
+    font-size: 14px;
+    padding: 10px;
+    /* width: 100%; */
+    /* font-weight: 0px; */
+    color: #777778;
+    position: relative;
+}
+.container h4::before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background: #777778;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.button button{
+    color: white;
+    padding: 5px 10px;
+    background-color: #a1c4fd;
+    border: 1px solid rgb(42, 112, 218);
+    border-radius: 30px;
+    outline: none;
+    margin: 0 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
